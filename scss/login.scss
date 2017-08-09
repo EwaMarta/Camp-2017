@@ -1,0 +1,100 @@
+$color1: #13bdd2;
+$color2: white;
+
+@mixin size ($x:20px,$y:20px) {
+    width: $x;
+    height: $y;
+}
+.all {
+    background-image: url(../img/tlo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 242px;
+    .logo_section {
+        border: 2px solid rgba(220, 220, 220, 0.3);
+        border-radius: 8px;
+        @include size(120px, 120px);
+        float: right;
+     // margin: auto;
+
+        position: relative;
+            .logo {
+            @include size(80px, 80px);
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            }
+        }
+    .form{
+        width: 546px;
+        height: 606px;
+        background-color: $color1;
+        color: $color2;
+        text-align: center;
+        h1 {
+            padding-top: 36px;
+            font-size: 40px;
+            }
+      
+        section {
+            border: 2px solid rgba(220, 220, 220, 0.3) ;
+            border-radius: 8px;
+            @include size(489px, 253px);
+            margin: 150px 30px auto 30px;
+            position: relative;
+            .avatar {
+                    @include size(140px, 140px);
+                    border-radius: 50%;
+                    position: absolute;
+                    margin: auto;
+                    top: -260px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;          
+            }
+            .change_section{
+                padding-top: 75px;
+            }
+            .logo_x   {
+                @include size;
+            }
+            .logo_kb{
+                @include size;
+                position: relative;
+                left: 220px;
+                top: -50px;
+            }
+            .input_section {
+                @include size(409px, 35px)
+                margin: auto;
+                margin-top: 50px;
+            }     
+            button {
+                @include size(118px, 31px);
+                background-color:$color2;
+                border-radius: 4px;
+                margin-top: 20px;
+                margin-left: 10px;    
+                }
+            a{
+                color: $color2;
+            }
+        }
+    }      
+    nav {
+        position: relative;
+        left: -20px;
+        li{
+            display: inline;
+            font-size: 8px;
+            color: $color1;
+            padding-right: 22px;
+        }
+    }
+}

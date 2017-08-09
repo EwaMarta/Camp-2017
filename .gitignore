@@ -1,0 +1,39 @@
+# Pomijanie plików/lokalizacji podczas śledzenia zmian
+# https://github.com/github/gitignore - A collection of .gitignore templates
+
+# OS generated files #
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+.idea
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+*.log
+*.sqlite
+*.js.map
+
+# NPM #
+pids
+logs
+results
+npm-debug.log
+
+# Directories #
+node_modules/
+.sass-cache/
+jspm_packages/
+
+# Images #
+*.psd
+*.ai
+*.bmp
