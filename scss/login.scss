@@ -1,12 +1,13 @@
 $color1: #13bdd2;
 $color2: white;
 
+// Może rozbić mixiny i zmienne do odzielnych plików i zaimportować dla porządku?
 @mixin size ($x:20px,$y:20px) {
     width: $x;
     height: $y;
 }
 .all {
-    background-image: url(../img/tlo.jpeg);
+    background-image: url(../img/tlo.jpeg); // Konwencją jest pisanie kodu i nazywanie plików po angielsku.
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,8 +19,10 @@ main {
         border-radius: 8px;
         @include size(120px, 120px);
         float: right;
+     // Komentarzy w kodzie nie ma co trzymać w repozytorium, po to jest git żeby móc wrócić do wcześniejszych wersji.
      // margin: auto;
 
+        // Wcięcia do poprawy. Uwaga generalna :) Polecam beautifier do Twojego edytora.
         position: relative;
             .logo {
             @include size(80px, 80px);
@@ -32,9 +35,10 @@ main {
             }
         }
     .form{
+        // Hirurgiczne piksele ;) co przy mniejszych rozdzielczościach?
         width: 546px;
         height: 606px;
-        background-color: $color1;
+        background-color: $color1; // Jaki kolor się kryje za tą zmienną? Nie lepiej nazwać jej np. $aquamarine? (seledynowy)
         color: $color2;
         text-align: center;
         h1 {
@@ -83,7 +87,7 @@ main {
                 margin-left: 10px;    
                 }
             a{
-                color: $color2;
+                color: $color2; // Jak w przypadku $color1 :)
             }
         }
     }      
