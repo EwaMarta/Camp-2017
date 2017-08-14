@@ -1,6 +1,9 @@
 # Pomijanie plików/lokalizacji podczas śledzenia zmian
 # https://github.com/github/gitignore - A collection of .gitignore templates
 
+# Można śmiało usunąć folder /css i dodać go do .gitignore i wypushować. Nie musi być w repozytorium. 
+# Podobnie jak bower_components.
+
 # OS generated files #
 .DS_Store*
 ehthumbs.db
