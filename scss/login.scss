@@ -1,100 +1,139 @@
 $color1: #13bdd2;
 $color2: white;
 
-@mixin size ($x:20px,$y:20px) {
+@mixin size($x:20px,$y:20px) {
     width: $x;
     height: $y;
 }
-.all {
-    background-image: url(../img/tlo.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+@mixin button {
+      margin: 5px;
+      line-height: 24px;
+      color: $color2;
+      font-size: 18px;
 }
 
-main {
-    margin-top: 242px;
-    .logo_section {
-        border: 2px solid rgba(220, 220, 220, 0.3);
-        border-radius: 8px;
-        @include size(120px, 120px);
-        float: right;
-     // margin: auto;
+.all{
+    display: flex;
+    align-items: center;
+    background: url('../img/tlo.jpeg') no-repeat bottom, rgba(10, 10, 10, 0.6);
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: auto;
+    min-height: 100vh;
+}
 
-        position: relative;
-            .logo {
-            @include size(80px, 80px);
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            }
-        }
-    .form{
-        width: 546px;
-        height: 606px;
-        background-color: $color1;
-        color: $color2;
-        text-align: center;
-        h1 {
-            padding-top: 36px;
+.logo-section{
+    @include size(160px, 160px);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    float: right;
+    img{
+        @include size(90px, 90px);
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.login-form{
+    min-width: 546px;
+    font-family: 'Roboto' , sans-serif;
+    color: $color2;
+    font-weight: 300;
+    background-color: $color1;
+    padding: 36px 28px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    header{
+        h1{
             font-size: 40px;
-            }
-      
-        section {
-            border: 2px solid rgba(220, 220, 220, 0.3) ;
-            border-radius: 8px;
-            @include size(489px, 253px);
-            margin: 150px 30px auto 30px;
-            position: relative;
-            .avatar {
-                    @include size(140px, 140px);
-                    border-radius: 50%;
-                    position: absolute;
-                    margin: auto;
-                    top: -260px;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;          
-            }
-            .change_section{
-                padding-top: 75px;
-            }
-            .logo_x   {
-                @include size;
-            }
-            .logo_kb{
-                @include size;
-                position: relative;
-                left: 220px;
-                top: -50px;
-            }
-            .input_section {
-                @include size(409px, 35px)
-                margin: auto;
-                margin-top: 50px;
-            }     
-            button {
-                @include size(118px, 31px);
-                background-color:$color2;
-                border-radius: 4px;
-                margin-top: 20px;
-                margin-left: 10px;    
-                }
-            a{
-                color: $color2;
+            text-shadow: -0.7px -0.7px 0 rgba(0, 0, 0, 0.11);
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    form{
+        margin: 135px 0 45px 0;
+        padding: 70px 10px 57px 10px;
+        border: solid 1px rgba(220, 220, 220, 0.3);
+        border-radius: 5px;
+        .avatar {
+            img{
+                @include size(100px, 100px);
+                border-radius: 50%;
+                margin: -150px auto 26px auto;
             }
         }
-    }      
-    nav {
-        position: relative;
-        left: -20px;
-        li{
-            display: inline;
-            font-size: 8px;
-            color: $color1;
-            padding-right: 22px;
+        span{
+            @include button;
         }
+        button{
+            display: inline-block;
+            @include button;
+            img{
+                @include size(24px, 24px);
+            }
+        }
+        input{
+            display: inline-block;
+            &[type='password']{
+                @include size(75%, 35px);
+            }
+            &[type='submit']{
+                background-color: $color2;
+                border: none;
+                border-radius: 5px;
+                padding: 0 40px;
+                margin: 0 20px;
+                font-size: 16px;
+                color: $color1;
+            }
+        }
+        .error{
+            visibility: hidden;
+            font-size: 13px;
+            color: $color2;
+            background-color: #ea2d2d;
+            border-radius: 5px;
+            margin: 5px 20px;
+            min-height: 15px;
+            min-width: 20px;
+            max-width: 75%;
+            content: "";
+            &::before{
+                position: absolute;
+                margin-top: -10px;
+                margin-left: -100px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 10px;
+                border-color: transparent transparent #ea2d2d transparent;
+                content: "";
+            }
+        }
+        a{
+            font-size: 15px;
+            color: $color2;
+            text-transform: uppercase;
+        }
+    }
+}
+nav {
+    position: relative;
+    left: -20px;
+    li{
+        display: inline;
+        font-size: 8px;
+        color: $color1;
+        padding-right: 22px;
     }
 }
