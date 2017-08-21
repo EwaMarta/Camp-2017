@@ -1,0 +1,52 @@
+section{   
+     padding-top: 65px;
+     background-color: #B2D4D3  ;
+     p {
+         font-size: 30px;
+         span {
+             font-weight: bold;
+         }
+     }
+     .scheduled-payments {
+        /* display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;  that not works*/
+         margin-top: 75px;
+    
+     }
+     .btn {
+         width: 30px;
+         height: 25px;
+         padding: 4px;
+         margin-left: 5px;
+         background-color:$color1;
+         color: $color2;
+         font-size: 20px;
+         text-transform: uppercase;
+         border-radius: 3px;
+     }
+     .add-btn, .analisis-btn{
+         text-align: right;
+         margin-top: 35px;
+         p{
+             font-size: 20px;
+             display: inline;
+         }
+     }
+     .analisis-btn{
+         button:nth-child(1){
+            background-color: #B2D4D3;
+            border: solid 2px $color2;
+         }
+     }
+
+     .chart{
+         padding-bottom: 25px;
+         img{
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+         }
+     }
+
+}

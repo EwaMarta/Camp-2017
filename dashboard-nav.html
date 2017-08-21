@@ -9,61 +9,111 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
   </head>
   <body>
+    <!-- Navigation -->
     <header>
-        <div class="dashboard-nav">
-          <div class="row">
-            <div class="column medium-5">
-              <div class="user-data">
-                <div class="row">
-                  <div class="column medium-6">
-                    <div class="user-photo_logo">
-                        <img src="img\ef_log.png"> 
-                        <img src="img\facet.jpeg">
+          <div class="dashboard-nav">
+            <div class="row">
+              <div class="column medium-5">
+                <div class="user-data">
+                  <div class="row">
+                    <div class="column medium-5">
+                      <div class="user-photo_logo">
+                        <a><img src="img\ef_log.png"></a>
+                        <a><img src="img\facet.jpeg"></a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="column medium-6">
-                    <div class="user-name_mail">
-                        <span>Janek K.</span>
-                        <div class="btn_mail-settings">
-                            <a><img src="img\mail.svg"></a> 
-                            <a><img src="img\settings.svg"></a>
-                        </div>
+                    <div class="column medium-7">
+                      <div class="user-name_mail">
+                          <span>Janek Kowalski</span>
+                          <div class="mail-settings">
+                              <a><img src="img\mail.svg"></a> 
+                              <a><img src="img\settings.svg"></a>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="column medium-5">
-              <nav>
-                <ul>
-                    <li class="home">
-                      <a href="">home</a>
-                    </li>
-                    <li class="analyse">
-                      <a href="">analyse</a>
-                    </li>
-                    <li class="plan">
-                      <a href="">plan</a>
-                    </li>
-                    <li class="earn">
-\                      <a href="">earn</a>
-                    </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="column medium-2">
-              <div class="search-end">
-                <a><img src="img\search.svg"></a> 
-                <a><img src="img\power.svg"></a> 
+              <div class="column medium-5">
+                <nav>
+                  <ul>
+                      <li class="home">
+                        <div></div>
+                        <a href="">home</a>
+                      </li>
+                      <li class="analyse">
+
+                        <a href="">analyse</a>
+                      </li>
+                      <li class="plan">
+                        <a href="">plan</a>
+                      </li>
+                      <li class="earn">
+                      <a href="">earn</a>
+                      </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column medium-2">
+                <div class="search-end">
+                    <a><img src="img\search.svg"></a> 
+                    <div></div>
+                    <a><img src="img\power.svg"></a> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
     </header> 
+    <!-- Sum up and chart-->
+    <section class="dashboard-finance-life_chart">
+      <div class="finance-life">
+        <div class="row">
+            <div class="column medium 5">
+                <h1> Finance life stream </h1>
+                <div class="row">
+                    <div class="column medium-6">
+                      <div> 
+                        <p> Balance </p>
+                        <p> <span>7 200,34 </span> PLN </p>
+                      </div>
+                    </div>
+                    <div class="column medium-6">
+                      <div class="available-funds">
+                        <p> Available funds </p>
+                        <p> <span>7 200,34 </span> PLN </p>
+                      </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="column medium-4">
+                <div class="scheduled-payments">
+                  <p>Scheduled payments</p>
+                  <p> <span>3 245,34 </span> PLN 
+                  <a href="#" class="btn">fast pay</a> </p>
+              </div>
+            </div>
+            <div class="column medium-3">
+                <div class="add-btn">
+                  <p>Add</p>
+                  <a href="#" class="btn">bank</a>
+                  <a href="#" class="btn">payment</a>
+                </div>
+                <div class="analisis-btn">
+                  <p>Accounts analisis</p>
+                  <button>OFF</button>
+                  <button>ON</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="chart">
+        <img src="img\chart.png" alt="finance chart">
+      </div>
+    </section>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/log.js"></script>
   </body>
 </html>
