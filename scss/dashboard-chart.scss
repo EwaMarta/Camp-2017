@@ -1,4 +1,4 @@
-section{   
+.dashboard-finance-life_chart{   
      padding-top: 65px;
      background-color: #B2D4D3  ;
      p {
@@ -10,7 +10,8 @@ section{
      .scheduled-payments {
         /* display: flex;
          flex-direction: column;
-         flex-wrap: wrap;  that not works*/
+         flex-wrap: wrap; 
+         justify-content: flex-end; that not works*/
          margin-top: 75px;
     
      }

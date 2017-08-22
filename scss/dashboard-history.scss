@@ -1,0 +1,52 @@
+.products-history{
+    background-color: #B2D4D3;
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+
+        div{
+            @include size (260px, 90px);
+            background-color:$color2;
+            margin: 3px;
+            position: relative;
+            div{
+                @include size(40px, 40px);
+                background-size: contain;
+                float: left;
+                margin: 20px 10px 0 40px;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+        .wallets div{
+                background-image: url(../img/wallet.svg);
+            }
+        .deposits div{
+                background-image: url(../img/piggy-bank.svg);                
+            }
+        .accounts div{
+                background-image: url(../img/money.svg);
+            }
+        .founds div{
+                background-image: url(../img/bar-chart.svg);
+            }
+        .bank-loans {
+            background-color:$color1;
+            div{
+                background-color:$color1;
+                background-image: url(../img/finger.svg);
+            }  
+        }   
+    }
+}
+.deposit-mail,  .founds-mail{
+    background-color:#e81c7b;
+    color: $color2;
+    text-align: center;
+    @include size(25px, 25px);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 170px;
+}
