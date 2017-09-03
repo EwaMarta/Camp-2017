@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="dashboard-nav">
+      <div class="row">
+        <div class="column medium-5">
+          <div class="user-data">
+            <div class="row">
+              <div class="column medium-5">
+                <div class="user-photo_logo">
+                  <a><img src="img\ef_log.png"></a>
+                  <a><img src="img\facet.jpeg"></a>
+                </div>
+              </div>
+              <div class="column medium-7">
+                <div class="user-name_mail">
+                  <span>Janek Kowalski</span>
+                  <div class="mail-settings">
+                    <a><img src="img\mail.svg"></a>
+                    <a><img src="img\settings.svg"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column medium-5">
+          <nav>
+            <ul>
+              <li class="home">
+                <div></div>
+                <a href="">home</a>
+              </li>
+              <li class="analyse">
+
+                <a href="">analyse</a>
+              </li>
+              <li class="plan">
+                <a href="">plan</a>
+              </li>
+              <li class="earn">
+                <a href="">earn</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="column medium-2">
+          <div class="search-end">
+            <a><img src="img\search.svg"></a>
+            <div></div>
+            <a><img src="img\power.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Transfer -->
+  <section class="transfer-form">
+    <form class="transfer">
+      <div class="back">
+        <img src="img/left-arrow.svg" alt="back-icon">
+      </div>
+      <div class="form-element">
+        <div class="row">
+          <div class="column small-12">
+            <div class="account-select">
+              <select name="" id="">
+                <option value="">
+                 <div class="account-name">sdasdasdsa</div>
+                 <div>asdsadasdd</div>
+                </option>
+              
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+          </div>
+          <div class="column small-9">
+            <div class="plus-new-account">
+              <a><img src="img/plus.svg" alt="new account number-input"></a>
+              <span>Add the account from witch you draw funds</span>
+              <input type="text" id="new-account"></input>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label>Type:</label>
+          </div>
+          <div class="column small-9">
+            <div class="type-select">
+              <label for="country">
+                    <input type="radio" id="country" name="type-select">
+                    <div class="icon">
+                      <img src="img/transfer.svg" alt="">
+                    </div>
+                    <span>Country</span>
+                  </label>
+              <label for="own">
+                    <input type="radio" id="own" name="type-select">
+                    <div class="icon">
+                      <img src="" alt="">
+                    </div>
+                    <span>Own</span>
+                  </label>
+              <label for="currencies">
+                    <input type="radio" id="currencies" name="type-select">
+                    <div class="icon">
+                      <img src="" alt="">
+                    </div>
+                    <span>Currencies</span>
+                  </label>
+              <label for="zus">
+                    <input type="radio" id="zus" name="type-select">
+                    <div class="icon">
+                      <img src="" alt="">
+                    </div>
+                    <span>ZUS</span>
+                  </label>
+              <label for="tax">
+                    <input type="radio" id="tax" name="type-select">
+                    <div class="icon">
+                      <img src="" alt="">
+                    </div>
+                    <span>TAX</span>
+                  </label>
+              <label for="gsm">
+                    <input type="radio" id="gsm" name="type-select">
+                    <div class="icon">
+                      <img src="img/phone.svg" alt="">
+                    </div>
+                    <span>GSM</span>
+                  </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="recipient-select">Recipient:</label>
+          </div>
+          <div class="column small-9">
+            <div class="recipient-select">
+              <select>
+                <option value="" disabled selected> Search for a recipient, co..</option>
+                <option value="1">Aaaaaaaaaaa</option>
+                <option value="2">Beeeeeeeeee</option>
+                <option value="3">Ccccccccccc</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="where-select">Where:</label>
+          </div>
+          <div class="column small-9">
+            <div class="where-select">
+              <label for="account">
+                    <input type="radio" id="account" name="where-select">
+                    <span>Account</span>
+                  </label>
+              <label for="facebook">
+                    <input type="radio" id="facebook" name="where-select">
+                    <span>Facebook</span>
+                  </label>
+              <label for="phone">
+                    <input type="radio" id="phone" name="where-select">
+                    <span>Phone</span>
+                  </label>
+              <label for="e-mail">
+                    <input type="radio" id="e-mail" name="where-select">
+                    <span>E-mail</span>
+                  </label>
+              <label for="by-phone">
+                    <input type="radio" id="by-phone" name="where-select">
+                    <span>By phone</span>
+                  </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="number-input">Number:</label>
+          </div>
+          <div class="column small-9">
+            <div class="number-input">
+              <input type="text" id="number-input">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="sum-input">Sum:</label>
+          </div>
+          <div class="column small-9">
+            <div class="sum-input">
+              <input type="text" id="sum-input">
+              <select name="" id="">
+                <option value="PLN" selected>PLN</option>
+                <option value="EUR">EUR</option>
+                <option value="CHF">CHF</option>
+                <option value="GBP">GBP</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="data-select">When:</label>
+          </div>
+          <div class="column small-9">
+            <div class="data-select">
+              <input type="text" id="datepicker">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="data-select">Title:</label>
+          </div>
+          <div class="column small-9">
+            <div class="title-input">
+              <input type="text" id="title-input">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+            <label for="data-select">Type of transfer:</label>
+          </div>
+          <div class="column small-9">
+            <div class="transfer-type-system">
+              <label for="normal">
+                    <input type="radio" id="normal" name="transfer-type-system">
+                    <span>Normaly</span>
+                    <span>about 2 days</span>
+                  </label>
+              <label for="express">
+                    <input type="radio" id="express" name="transfer-type-system">
+                    <span>Express Eliksir</span>
+                    <span>15 min</span>
+                  </label>
+              <label for="sorbnet">
+                    <input type="radio" id="sorbnet" name="transfer-type-system">
+                    <span>Sorbnet</span>
+                    <span>2 hours</span>
+                  </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column small-3">
+          </div>
+          <div class="column small-9">
+            <button>continue</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/transfer.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+
+
+</body>
+
+</html>

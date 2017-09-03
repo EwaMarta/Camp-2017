@@ -7,6 +7,12 @@
 @import 'dashboard-nav';
 @import 'dashboard-chart';
 @import 'dashboard-history';
+@import 'transfer';
+@import 'transfer-checkbox';
+@import 'transfer-input';
+@import 'zmienne';
+@import 'mixiny';
+
 
 @include foundation-global-styles;
 //@include foundation-grid;

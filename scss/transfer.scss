@@ -1,0 +1,133 @@
+ .account-select{
+     .account-name:before{
+         content: ""; // póki co nie działa=/
+         background-color: red; 
+     }
+ }     
+      
+        .transfer-form{
+            background-color: $color3;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            input, select{
+                border: 1px solid $color3;
+                border-radius: 3px;
+            }
+            form{
+                display: block;
+                margin: auto;
+                width: 1050px;
+                background-color: $color2;
+                text-align: justify;
+                text-justify: distribute-all-lines;
+                border-radius: 10px;
+                .plus-new-account input{
+                   // display: none;
+                }
+                
+                img{
+                    @include size(40px,40px);
+                    margin: 16px;
+                }
+                .recipient-select select{
+                    background: url(../img/open-book.svg) no-repeat right center;
+                    background-origin: content-box;
+                    background-size: 25px;
+                    color: $color3;
+                }
+                .number-input {
+                    width: 450px;
+                }
+                .sum-input {
+                    display: flex;
+                    input{
+                        width: 330px;
+                        margin-right: 20px;
+                    }
+                    select{
+                        background: url(../img/down-arrow.svg) no-repeat right center;
+                        background-origin: content-box;
+                        background-size: 25px;
+                        color: $color3;
+                        width: 90px;
+                    }
+                }
+                .type-select label{
+                        display: inline-block;
+                        width: 100px/6;
+                        margin-left: 5px;
+                        text-align: center;
+                        input{
+                            display: none;
+                            &:checked + .icon{
+                                background-color: $color1;
+                            }
+                        }
+                        .icon{
+                            @include size(90px,90px);
+                            background-color: $color3;
+                            img{
+                                margin-top: 25px;
+                            }
+                        }
+                       
+                }
+                .transfer-type-system label{
+                    span:nth-child(2){
+                        font-weight: bold;
+                   }
+                }
+                button{
+                    @include size(116px, 35px);
+                    background-color: $color1;
+                    border-radius: 5px;
+                    margin: 30px 0 30px 0;
+                    text-transform: uppercase;
+                    color: $color2;
+                }
+            }
+        }    
+// castom radiobutton
+.where-select label, .transfer-type-system label{
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    input{
+        display: none;
+        &:checked + span:before,
+        &:not(:checked) + span:before{
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 1;
+            padding-left: 15px;
+            width: 28px;
+            height: 28px;
+            border: 1px solid $color3;
+            box-shadow: 1px 1px 1px $color3 inset;
+            border-radius: 100%;
+            background: #fff;
+        }
+        &:checked + span:after,
+        &:not(:checked) + span:after{
+            content: '';
+            display: block;
+            position: relative;
+            top: -15px; // bardzo brzydko środkowane na oko;/ -  nie wiem jak powinno byc
+            right: 32px; // posision absolut wysyła kółka w świat;/
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background: green;
+
+        }
+        &:checked + span:after{
+            opacity: 1;
+        }
+        &:not(:checked) + span:after{
+            opacity: 0;
+        }
+
+
+    }
+}

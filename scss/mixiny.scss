@@ -1,0 +1,10 @@
+@mixin size($x:20px,$y:20px) {
+    width: $x;;
+    height: $y;
+}
+@mixin button {
+      margin: 5px;
+      line-height: 24px;
+      color: $color2;
+      font-size: 18px;
+}

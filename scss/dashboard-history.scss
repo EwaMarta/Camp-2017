@@ -1,5 +1,7 @@
 .products-history{
     background-color: #B2D4D3;
+    padding-bottom: 45px;
+
     .products{
         display: flex;
         flex-wrap: wrap;
@@ -38,6 +40,10 @@
                 background-image: url(../img/finger.svg);
             }  
         }   
+    }
+    .history{
+        width: 100%;
+        background-color: $color2;
     }
 }
 .deposit-mail,  .founds-mail{

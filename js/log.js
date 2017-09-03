@@ -12,10 +12,7 @@ const eyeButton = document.querySelectorAll("button")[2];
     button.addEventListener("click", function(event) {
       event.preventDefault();
       checkPassword(); });
-    eyeButton.addEventListener("click", function(event) {
-       event.preventDefault();
-       showPassword();
-    });
+  
 
 
 })();
@@ -46,7 +43,7 @@ function checkResponse(){
       },
       success: function(response) {
         console.log("succes", response);
-
+        window.open('dashboard-nav.html', '_blank');
         input.style.border = "2px solid #0f0";
         blockError.style.visibility = "hidden";
       }
