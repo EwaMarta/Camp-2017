@@ -34,10 +34,17 @@
              display: inline;
          }
      }
-     .analisis-btn{
-         button:nth-child(1){
-            background-color: #B2D4D3;
-            border: solid 2px $color2;
+     .analisis-btn button {
+         padding: 8px;
+         margin-right: -5px;
+
+         border: solid 4px $color2;
+         &:nth-child(2){
+            background-color:$color3;
+            margin-left: 5px;
+         }
+         &:nth-child(3){
+            background-color:$color2;
          }
      }
 

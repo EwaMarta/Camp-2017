@@ -1,0 +1,47 @@
+// castom radiobutton
+.where-select label,
+.transfer-type-system label{
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    input{
+        display: none;
+        + span:before{
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 1px;
+            // padding-left: 15px;
+            width: 28px;
+            height: 28px;
+            border: 1px solid $color3;
+            box-shadow: 1px 1px 1px $color3 inset;
+            border-radius: 100%;
+            background: #fff;
+        }
+        + span:after{
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 1px;
+            // padding-left: 15px;
+            width: 28px;
+            height: 28px;
+            border-radius: 100%;
+            background: #0f0;
+            transform: scale(.5);
+            transition: all .3s;
+        }
+        &:checked + span:after{
+            opacity: 1;
+        }
+        &:not(:checked) + span:after{
+            opacity: 0;
+            transform: scale(0);
+        }
+
+
+    }
+}
+

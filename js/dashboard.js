@@ -56,18 +56,36 @@ const getProductsData = (endpoint, containerClassName) => {
 }
 getProductsData('data/products', '.products');
 
-productsContainer.innerHTML(productTemplate);
+//productsContainer.innerHTML(productTemplate);
 
 // history
 
-$.get('https://efigence-camp.herokuapp.com/api/data/history');
-  const historyContainer = document.querySelector('.history');
-  const historyList = data.content;
-  console.log(historyList);
+const getHistoryData = (endpoint, containerClassName) => {
+  $.get('https://efigence-camp.herokuapp.com/api/' + endpoint,
+    (data) => {
+      const historyContainer = document.querySelector(containerClassName);
+      const historyList = data.content;
+      console.log(historyList);
 
+      const historyTemplate = (historyData) => {
 
+        return `
+					
+        <div></div>
+        <p>${historyData.id} <br> ${historyData.date} ${productData.description} </p>     
+        `
+      };
 
+      historyList.forEach((element, index) => {
 
+        const template = historyTemplate(element);
+        historyContainer.insertAdjacentHTML('beforeend', template);
+      });
+    });
+
+};
+
+getHistoryData('data/history','.history')
 
 
 
