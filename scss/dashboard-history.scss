@@ -1,3 +1,16 @@
+.new-mail{
+    background-color:#e81c7b;
+    color: $color2;
+    text-align: center;
+    @include size(20px, 20px);
+    border-radius: 50%;
+    position: relative;
+    left: 25px;
+    top: 20px;
+    font-size: 15px;
+}
+
+
 .products-history{
     background-color: #B2D4D3;
     padding-bottom: 45px;
@@ -46,13 +59,42 @@
         background-color: $color2;
     }
 }
-.deposit-mail,  .founds-mail{
-    background-color:#e81c7b;
-    color: $color2;
-    text-align: center;
-    @include size(25px, 25px);
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
-    right: 170px;
+.history{
+    overflow: scroll;
+    overflow-x:hidden;
+    max-height: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    &::-webkit-scrollbar-track {
+        background-color: $color3;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $color1;
+    }
+
+    .step{
+        border-bottom: solid 1px $color3;
+        padding: 10px 0;
+
+    }
+    .currency{
+        text-align: right;
+    }
+    span{
+
+        font-weight: bold;
+    }
+    .income span{
+        color: $color5;
+    }
+    .outcome span:before{
+        content: "- ";
+    }
+    
 }
+

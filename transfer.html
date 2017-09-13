@@ -16,6 +16,7 @@
   <!-- Navigation -->
   <header>
     <div class="dashboard-nav">
+
       <div class="row">
         <div class="column medium-5">
           <div class="user-data">
@@ -30,6 +31,7 @@
                 <div class="user-name_mail">
                   <span>Janek Kowalski</span>
                   <div class="mail-settings">
+                    <div class="new-mail">2</div> <!-- "2" jako dane z API-->
                     <a><img src="img\mail.svg"></a>
                     <a><img src="img\settings.svg"></a>
                   </div>
@@ -42,26 +44,25 @@
           <nav>
             <ul>
               <li class="home">
-                <div></div>
-                <a href="">home</a>
+                <a href=""><img src="img\home.svg" alt="home"> home</a>
               </li>
               <li class="analyse">
-
-                <a href="">analyse</a>
+                <a href=""> <img src="img\analysis.svg" alt="analyse">analise</a>
               </li>
               <li class="plan">
-                <a href="">plan</a>
+                <a href=""> <img src="img\plan.svg" alt="plan"> plan</a>
               </li>
               <li class="earn">
-                <a href="">earn</a>
+                <a href=""> <img src="img\earn.svg" alt="earn"> earn</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="column medium-2">
+        <div class="column medium-2" style="position:relative">
           <div class="search-end">
-            <a><img src="img\search.svg"></a>
-            <div></div>
+            <div class="search-box">
+              <input type="text" id="">
+            </div>
             <a><img src="img\power.svg"></a>
           </div>
         </div>
@@ -79,9 +80,20 @@
           <div class="column small-12">
             <div class="account-select">
               <select name="" id="">
-                <option value="">
-                 <div class="account-name">sdasdasdsa</div>
-                 <div>asdsadasdd</div>
+                <option value="1">
+                 <div>Main account</div>
+                 <div>43342342343432423423423423442234</div>
+                 <div> 12 000 PLN </div>
+                </option>
+                <option value="2">
+                 <div>Second account</div>
+                 <div>87983475934574389574385735893458</div>
+                 <div> 65 000 PLN </div>
+                </option>
+                <option value="2">
+                 <div>Third account</div>
+                 <div>48293842374238473874823748374837</div>
+                 <div> 1 000 PLN </div>
                 </option>
               
               </select>

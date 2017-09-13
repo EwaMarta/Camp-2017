@@ -70,9 +70,23 @@ const getHistoryData = (endpoint, containerClassName) => {
       const historyTemplate = (historyData) => {
 
         return `
-					
-        <div></div>
-        <p>${historyData.id} <br> ${historyData.date} ${productData.description} </p>     
+				
+            <div class="step">
+            <div class="row">
+                <div  class="column small-3">
+                  <p> ${historyData.date} </p>  
+                </div>
+                <div  class="column small-6">
+                  <p> ${historyData.description} </p>  
+                </div>
+                <div  class="column small-3">
+                    <div class="${historyData.status} currency">
+                      <p><span>${historyData.amount}</span> ${historyData.currency} </p>  
+                    </div>
+                </div>
+                </div>
+            </div>   
+         
         `
       };
 
@@ -81,7 +95,11 @@ const getHistoryData = (endpoint, containerClassName) => {
         const template = historyTemplate(element);
         historyContainer.insertAdjacentHTML('beforeend', template);
       });
-    });
+    
+
+
+
+  });
 
 };
 
