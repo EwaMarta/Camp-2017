@@ -1,6 +1,6 @@
  .account-select{
      .account-name:before{
-         content: ""; // póki co nie działa=/
+         content: ""; // póki co nie działa=/ wybór konta, styl
          background-color: red; 
      }
  }     
@@ -22,7 +22,7 @@
                 text-justify: distribute-all-lines;
                 border-radius: 10px;
                 .plus-new-account input{
-                   //display: none;
+                visibility: hidden;
                 }
               
                 img{

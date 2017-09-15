@@ -71,7 +71,7 @@
   </header>
   <!-- Transfer -->
   <section class="transfer-form">
-    <form class="transfer">
+    <form class="transfer" id="transfer">
       <div class="back">
         <img src="img/left-arrow.svg" alt="back-icon">
       </div>
@@ -105,8 +105,8 @@
           </div>
           <div class="column small-9">
             <div class="plus-new-account">
-              <a><img src="img/plus.svg" alt="new account number-input"></a>
-              <span>Add the account from witch you draw funds</span>
+              <a><img src="img/plus.svg" id="add-text" alt="new account number-input"></a>
+              <span >Add the account from witch you draw funds</span>
               <input type="text" id="new-account"></input>
             </div>
           </div>
@@ -280,7 +280,7 @@
           <div class="column small-3">
           </div>
           <div class="column small-9">
-            <button>continue</button>
+            <button id="continue">continue</button>
           </div>
         </div>
       </div>
@@ -292,6 +292,7 @@
   <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
   <script src="js/transfer.js"></script>
   <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="js/walidacja.js"></script>
 
 
 </body>
